@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+
+:root {
+    color-scheme: dark;
+    @media (prefers-color-scheme: light) {
+        color-scheme: dark;
+    }
+}
+
+main {
+    @apply flex-row items-center justify-between leading-relaxed;
+}
+
+main ul {
+    @apply mx-3 list-disc pl-3;
+}
+
+main a {
+    @apply underline text-purple-400 hover:text-purple-500 ease-in-out duration-250 focus:outline-2 focus:outline-purple-400;
+}
+
+main .hires__image_grid {
+    @apply flex flex-wrap justify-around items-center gap-12 text-center m-3;
+}
+
+main .hires__image_grid img {
+    @apply h-24 md:h-40 w-auto;
+}
+
+main hr {
+    @apply border-neutral-50;
+}
+
+form, .form-group {
+    @apply mb-3 flex flex-col gap-1 flex-grow;
+}
+
+label {
+    @apply font-bold;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    @apply bg-neutral-800 rounded-xs focus:outline-none focus:ring-2 focus:ring-purple-400 py-1 px-3 w-full;
+}
+
+.wide {
+    @apply max-w-screen-lg;
+}
+
+.sta-btn, .sta-btn.group-hover {
+    @apply mx-3 bg-purple-400 hover:bg-purple-500 text-neutral-950 py-1 px-3 cursor-pointer
+    select-none rounded-xs transition-colors duration-250 w-fit inline-flex
+    font-semibold no-underline focus:outline-2 focus:outline-neutral-900 focus:ring-4 focus:ring-purple-400;
+}
+
+.sta-btn:hover {
+    @apply text-neutral-950 ;
+}
+
+.sta-btn.yellow-btn {
+    @apply bg-amber-500 hover:bg-amber-600 focus:ring-amber-500;
+}
+
+.sta-btn.teal-btn {
+    @apply bg-teal-500 hover:bg-teal-600 focus:ring-teal-500;
+}
+
+.sta-btn img {
+    filter: invert(0.96);
+}
+
+/* Nav animation */
+.swing {
+    animation: swing 0.5s;
+    transform-origin: center -20px;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(4deg);
+        opacity: 0;
+    }
+    25% {
+        transform: rotate(-3deg);
+    }
+    50% {
+        transform: rotate(2deg);
+        opacity: 100%;
+    }
+    75% {
+        transform: rotate(-1deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Embla Carousel */
+.embla {
+    overflow: hidden;
+}
+
+.embla__container {
+    display: flex;
+}
+
+.embla__slide {
+    flex: 0 0 auto;
+    min-width: 0;
+    display: inline-block;
+}
