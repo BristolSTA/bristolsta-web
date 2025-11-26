@@ -4,9 +4,9 @@ import {Button, Link} from "react-aria-components";
 import Image from "next/image";
 import {useState} from "react";
 
-function NavLi({href, className, children}: { href: string; className: string, children: string }) {
+function NavLi({href, children}: { href: string, children: string }) {
   return (
-    <li className={`group m-2 p-2 text-bold hover:text-purple-400 ${className}`}>
+    <li className={`group m-2 p-2 text-bold hover:text-purple-400`}>
       <div className="relative" aria-hidden="true">
         <SpotlightIcon className="size-5 hidden group-hover:block absolute -inset-y-3 -inset-x-7 swing"/>
       </div>
@@ -55,7 +55,7 @@ export default function SiteNav() {
           <PageLinks />
         </div>
         {navOpen && (
-          <div className="absolute z-10 top-18 fixed h-full w-screen left-0 overflow-y-scroll bg-neutral-950 lg:hidden nav-open">
+          <div className="z-10 top-18 fixed h-full w-screen left-0 overflow-y-scroll bg-neutral-950 lg:hidden nav-open">
             <PageLinks className="flex-col pb-3" />
           </div>
         )}
