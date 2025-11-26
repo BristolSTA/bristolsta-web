@@ -10,9 +10,9 @@ import HomeCard from "./home-card";
 
 export default function Home() {
   return (
-    <main>
+    <main className="-mb-4">
       <div className="bg-neutral-600 bg-cover bg-center max-h-screen"
-           style={{backgroundImage: 'url(/images/image.jpeg)'}}>
+           style={{backgroundImage: 'url(/images/front.png)'}}>
         <div className="bg-neutral-950/75 w-full h-full pt-48 p-3">
           <h1 className="font-bold text-5xl text-center">Welcome to Bristol STA</h1>
           <h2 className="font-semibold text-2xl text-center text-neutral-300 py-3">The backstage technical society for
@@ -20,7 +20,7 @@ export default function Home() {
         </div>
         <div className="bg-neutral-950/75 w-full h-full pb-48 p-3 flex items-center justify-center">
           <Link href="/get-involved" className="sta-btn">Get involved</Link>
-          <Link href="/contact" className="sta-btn yellow-btn">Contact us</Link>
+          <Link href="/contact-us" className="sta-btn yellow-btn">Contact us</Link>
         </div>
       </div>
       <StaTextContainer className="grid md:grid-cols-2 my-6 w-full text-center md:text-left">
@@ -56,7 +56,7 @@ export default function Home() {
               <ChevronRightIcon className="size-6" aria-hidden="true"/>
             </StaLinkButton>
           </HomeCard>
-          <HomeCard bgImageUrl={"/images/alice-1.jpeg"}>
+          <HomeCard bgImageUrl={"/images/bar.jpg"}>
             <StaHeading3>Put on a Show</StaHeading3>
             <StaText>
               We’d love to help out with anything from intimate studio work to epic musicals. If you’ve got an idea, get
