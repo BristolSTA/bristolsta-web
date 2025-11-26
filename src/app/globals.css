@@ -66,6 +66,10 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     @apply bg-teal-500 hover:bg-teal-600 focus:ring-teal-500;
 }
 
+.sta-btn.neutral-btn {
+    @apply bg-neutral-700 hover:bg-neutral-800 focus:ring-neutral-700 text-neutral-50;
+}
+
 .sta-btn img {
     filter: invert(0.96);
 }
@@ -99,6 +103,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
 /* Embla Carousel */
 .embla {
     overflow: hidden;
+    z-index: 10 !important;
 }
 
 .embla__container {
@@ -109,4 +114,16 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     flex: 0 0 auto;
     min-width: 0;
     display: inline-block;
+}
+
+body:has(.nav-open) .hide-on-nav-open {
+    /*
+    We need this bad workaround to hide images when the mobile nav is open
+    because the way next renders images does not make sense and they are
+    invincible in a way that I can't understand :(
+    If you find an image that doesn't disappear when you open the nav just add
+    this class and it should disappear.
+    If you want to try and find a prettier fix I send hope and good vibes <3
+    */
+    z-index: -10 !important;
 }

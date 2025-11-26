@@ -16,7 +16,7 @@ function SocialLi({href, iconFile, alt}: { href: string; iconFile: string; alt: 
 
 export default function SiteFooter() {
   return (
-    <footer className={`bg-neutral-950 p-4`}>
+    <footer className={`bg-neutral-950 p-4 hide-on-nav-open`}>
       <StaTextContainer className="flex flex-col md:flex-row md:gap-8 justify-center items-center">
         {/*<Image src="/images/sta-logo-full.svg" alt="sta" width={500} height={500} className={"h-16 w-auto"}/>*/}
         <Image src="/images/bristolsu-logo.png" width={2183} height={503} alt="Bristol SU: Supporting Student Groups logo" className={"h-12 w-auto"}/>
