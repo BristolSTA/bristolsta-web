@@ -15,13 +15,13 @@ function CommitteeLi({role, mail, people}: { role: string, mail?: string, people
 export default function AboutUs() {
   return (
     <main>
-      <StaTitle title="Committee" bgImageUrl="/images/spotlights.jpeg"/>
+      <StaTitle title="Committee" bgImageUrl="/images/agm-2025-group.jpeg"/>
       <StaTextContainer>
         <StaText>Our committee for the 25-26 academic year is:</StaText>
         <ul>
           <CommitteeLi role="President" people="Éabha"/>
           <CommitteeLi role="Vice President" mail="vp" people="Chloe"/>
-          <CommitteeLi role="Secretary" people="Eli"/>
+          <CommitteeLi role="Secretary" people="Andrew"/>
           <CommitteeLi role="Equalities & Welfare Officer" mail="equalities" people="Ameerah"/>
           <CommitteeLi role="Treasurer" people="Miles"/>
           <CommitteeLi role="Training Managers" mail="training" people="Bryn & Jonathan"/>
@@ -30,14 +30,11 @@ export default function AboutUs() {
           <CommitteeLi role="Publicity Officers" mail="publicity" people="Pola & Yara"/>
           <CommitteeLi role="Social Secretaries" mail="social" people="Harriet & Veronica"/>
           <CommitteeLi role="Webmaster" people="Clara"/>
-          <CommitteeLi role="New Members' Rep" mail="nmr" people="Harriet"/>
+          <CommitteeLi role="New Members' Rep" mail="nmr" people="Cathy & Li"/>
           <CommitteeLi role="Alumni Rep" mail="alumni" people="Dan"/>
           <CommitteeLi role="Signator" people="Archie"/>
-          <CommitteeLi role="Confectionary Managers" mail="confectionary" people="Eli & George"/>
+          <CommitteeLi role="Confectionary Managers" mail="confectionary" people="Elanor & Freddie"/>
         </ul>
-      </StaTextContainer>
-      <StaTextContainer>
-        <Image src={"/images/agm-2025-group.jpeg"} alt={"The STA"} width={3714} height={1634} className={"rounded-md"}/>
       </StaTextContainer>
     </main>
 
