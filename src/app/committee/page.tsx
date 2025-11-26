@@ -2,7 +2,6 @@ import StaTitle from "../../components/sta-title";
 import StaText from "../../components/sta-text";
 import StaTextContainer from "../../components/sta-text-container";
 import Link from "next/link";
-import Image from "next/image";
 
 function CommitteeLi({role, mail, people}: { role: string, mail?: string, people: string }) {
   return (
