@@ -10,7 +10,7 @@ import {CalendarRangeIcon} from "lucide-react";
 export default function GetInvolved() {
   return (
     <main>
-      <StaTitle title="Get Involved" bgImageUrl="/images/mic-world.jpeg"/>
+      <StaTitle title="Get Involved" bgImage="eos.jpg"/>
       <StaTextContainer>
         <StaText>The best way to get involved in the STA is to come and join us in the Winston and Pegg theatres during
           a show run – there&apos;s always something to get hands-on with, from carpentry and stage management to
@@ -33,7 +33,7 @@ export default function GetInvolved() {
         </StaLinkButton>
       </StaTextContainer>
       <StaTextContainer>
-        <StaText>If you want to know what we&apos;re currently working on, see the <Link href={"/what's-on"}>What&apos;s
+        <StaText>If you want to know what we&apos;re currently working on, see the <Link href={"/whats-on"}>What&apos;s
           On</Link> page, or for a more comprehensive day-by-day view, have a look at the STA Calendar.</StaText>
         <StaLinkButton href="https://calendar.google.com/calendar/u/1?cid=Y18zYzMwNzY0ZDBmN2MxMWZkNjI4ODA2YjYwMjEwMWQzNDRhNDUxNThmY2YzYWJiYzg1MzYxZmM5YjUyODY2OTc0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20" className={"yellow-btn"}>
           <CalendarRangeIcon className={"size-5"} aria-hidden="true"/>

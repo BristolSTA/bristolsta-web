@@ -10,7 +10,7 @@ export default function ContactUs() {
 
   return (
     <main>
-      <StaTitle title="Contact Us" bgImageUrl="/images/symphonia.jpeg"/>
+      <StaTitle title="Contact Us" bgImage="9to5-sound.jpg"/>
       <StaTextContainer>
         <StaText>
           We&apos;re always happy to answer any questions you have or provide more information about our services! The

@@ -5,7 +5,7 @@ import StaTextContainer from "../../components/sta-text-container";
 export default function AboutUs() {
   return (
     <main>
-      <StaTitle title="About the STA" bgImageUrl="/images/les-mis-crew.jpeg"/>
+      <StaTitle title="About the STA" bgImage="beams.jpg"/>
       <StaTextContainer>
         <StaText>Bristol Stage Technicians&apos; Association has provided technical services to performing arts
           societies at the

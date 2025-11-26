@@ -15,7 +15,7 @@ function CommitteeLi({role, mail, people}: { role: string, mail?: string, people
 export default function AboutUs() {
   return (
     <main>
-      <StaTitle title="Committee" bgImageUrl="/images/agm-2025-group.jpeg"/>
+      <StaTitle title="Committee" bgImage="agm-2025-group.jpeg"/>
       <StaTextContainer>
         <StaText>Our committee for the 25-26 academic year is:</StaText>
         <ul>

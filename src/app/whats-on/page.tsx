@@ -73,7 +73,7 @@ export default function Page(): JSX.Element {
   if (loading) {
     return (
       <main>
-        <StaTitle title="What's On" bgImageUrl="/images/panto-narnia.jpeg"/>
+        <StaTitle title="What's On" bgImage="panto-narnia.jpeg"/>
       </main>
     );
   }
@@ -81,7 +81,7 @@ export default function Page(): JSX.Element {
   if (error) {
     return (
       <main>
-        <StaTitle title="What's On" bgImageUrl="/images/panto-narnia.jpeg"/>
+        <StaTitle title="What's On" bgImage="panto-narnia.jpeg"/>
         <StaTextContainer>
           <StaText>{error}</StaText>
         </StaTextContainer>
@@ -91,7 +91,7 @@ export default function Page(): JSX.Element {
 
   return (
     <main>
-      <StaTitle title="What's On" bgImageUrl="/images/panto-narnia.jpeg"/>
+      <StaTitle title="What's On" bgImage="panto-narnia.jpeg"/>
       <StaTextContainer className={"grid grid-cols-1 sm:grid-cols-2 grid-flow-row"}>
         {edges.map((edge) => {
           const p = edge.node;

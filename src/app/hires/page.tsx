@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function Hires() {
   return (
     <main>
-      <StaTitle title="Hires" bgImageUrl="/images/ladder.jpeg"/>
+      <StaTitle title="Hires" bgImage="ladder.jpeg"/>
       <StaTextContainer>
         <StaText>
           We&apos;re happy to hire out our equipment for you to use for your own events or productions. We can offer a
