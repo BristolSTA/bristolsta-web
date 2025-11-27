@@ -37,7 +37,7 @@ export default function SiteNav() {
       <div className="flex items-center justify-between max-w-screen-lg w-full mx-auto">
         <Link href="/">
           <Image src="/images/sta-logo-full.svg" width={1000} height={100} alt="Stage Technicians' Association logo"
-                 className={"w-min h-14"}/>
+                 className={"h-14 w-auto"}/>
         </Link>
         <div className="block lg:hidden">
           <Button onPress={() => setNavOpen(!navOpen)}
