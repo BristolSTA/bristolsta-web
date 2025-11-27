@@ -1,6 +1,11 @@
 import StaTitle from "../../components/sta-title";
 import StaText from "../../components/sta-text";
 import StaTextContainer from "../../components/sta-text-container";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'About Us',
+};
 
 export default function AboutUs() {
   return (

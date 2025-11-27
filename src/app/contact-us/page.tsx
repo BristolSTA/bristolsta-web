@@ -1,10 +1,12 @@
-"use client";
 import StaTitle from "../../components/sta-title";
 import StaTextContainer from "../../components/sta-text-container";
-import StaText from "../../components/sta-text";
-import {Link} from "react-aria-components";
 import ContactForm from "./contact-form";
+import ContactInfo from "./contact-info";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: 'Contact Us',
+};
 
 export default function ContactUs() {
 
@@ -12,11 +14,7 @@ export default function ContactUs() {
     <main>
       <StaTitle title="Contact Us" bgImage="9to5-sound.jpg"/>
       <StaTextContainer>
-        <StaText>
-          We&apos;re always happy to answer any questions you have or provide more information about our services! The
-          easiest way to contact us is to email us at <Link
-          href="mailto:committee@bristolsta.com">committee@bristolsta.com</Link> or use the form below.
-        </StaText>
+        <ContactInfo />
         <ContactForm/>
       </StaTextContainer>
     </main>
