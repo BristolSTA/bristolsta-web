@@ -5,7 +5,6 @@ import { ProductionNode } from "@/app/whats-on/productions";
 function makeDateString(start: string, end: string): string {
   start = start ? start : "";
   end = end ? end : "";
-  let dateString = "";
   if (start.substring(0, 10) === end.substring(0, 10)) {
     return new Date(start).toLocaleDateString("en-GB", {
       day: "numeric",
