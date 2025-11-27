@@ -41,7 +41,7 @@ const currentProductionsQuery = gql`
 export default function UOBTheatreProductions(): JSX.Element {
   const endpoint = process.env.NEXT_PUBLIC_UOBTHEATRE_GRAPHQL_ENDPOINT;
   const [edges, setEdges] = useState<{ node: ProductionNode }[]>([]);
-  const [loading, setLoading] = useState<Boolean>(true);
+  const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -91,8 +91,8 @@ export default function UOBTheatreProductions(): JSX.Element {
       <StaTextContainer>
         <StaText>
           Things are a bit quiet right now... If you have a production you want
-          to work with us on, please get in touch, we'd love to help! Otherwise,
-          we're working on things behind the scenes so keep an eye out for
+          to work with us on, please get in touch, we&apos;d love to help! Otherwise,
+          we&apos;re working on things behind the scenes so keep an eye out for
           tickets becoming available soon.
         </StaText>
         <StaLinkButton href="/contact-us" className="teal-btn">
