@@ -2,7 +2,7 @@
 
 import { verifyTurnstile } from "nextjs-turnstile";
 
-export async function verification(token) {
+export async function verification(token: string) {
   return await verifyTurnstile(token);
 }
 
