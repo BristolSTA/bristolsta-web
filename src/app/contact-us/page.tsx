@@ -5,17 +5,16 @@ import ContactInfo from "./contact-info";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Contact Us',
+  title: "Contact Us",
 };
 
 export default function ContactUs() {
-
   return (
     <main>
-      <StaTitle title="Contact Us" bgImage="9to5-sound.jpg"/>
+      <StaTitle title="Contact Us" bgImage="9to5-sound.jpg" />
       <StaTextContainer>
         <ContactInfo />
-        <ContactForm/>
+        <ContactForm />
       </StaTextContainer>
     </main>
   );

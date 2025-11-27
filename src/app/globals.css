@@ -1,123 +1,127 @@
 @import "tailwindcss";
 
-
 :root {
+  color-scheme: dark;
+  @media (prefers-color-scheme: light) {
     color-scheme: dark;
-    @media (prefers-color-scheme: light) {
-        color-scheme: dark;
-    }
+  }
 }
 
 main {
-    @apply flex-row items-center justify-between leading-relaxed;
+  @apply flex-row items-center justify-between leading-relaxed;
 }
 
 main ul {
-    @apply mx-3 list-disc pl-3;
+  @apply mx-3 list-disc pl-3;
 }
 
 main a {
-    @apply underline text-purple-400 hover:text-purple-500 ease-in-out duration-250 focus:outline-2 focus:outline-purple-400;
+  @apply underline text-purple-400 hover:text-purple-500 ease-in-out duration-250 focus:outline-2 focus:outline-purple-400;
 }
 
 main .hires__image_grid {
-    @apply flex flex-wrap justify-around items-center gap-12 text-center m-3;
+  @apply flex flex-wrap justify-around items-center gap-12 text-center m-3;
 }
 
 main .hires__image_grid img {
-    @apply h-24 md:h-40 w-auto;
+  @apply h-24 md:h-40 w-auto;
 }
 
 main hr {
-    @apply border-neutral-50;
+  @apply border-neutral-50;
 }
 
-form, .form-group {
-    @apply mb-3 flex flex-col gap-1 flex-grow;
+form,
+.form-group {
+  @apply mb-3 flex flex-col gap-1 flex-grow;
 }
 
 label {
-    @apply font-bold;
+  @apply font-bold;
 }
 
-input[type="text"], input[type="email"], input[type="password"], textarea {
-    @apply bg-neutral-800 rounded-xs focus:outline-none focus:ring-2 focus:ring-purple-400 py-1 px-3 w-full;
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  @apply bg-neutral-800 rounded-xs focus:outline-none focus:ring-2 focus:ring-purple-400 py-1 px-3 w-full;
 }
 
 .wide {
-    @apply max-w-screen-lg;
+  @apply max-w-screen-lg;
 }
 
-.sta-btn, .sta-btn.group-hover {
-    @apply mx-3 bg-purple-400 hover:bg-purple-500 text-neutral-950 py-1 px-3 cursor-pointer
+.sta-btn,
+.sta-btn.group-hover {
+  @apply mx-3 bg-purple-400 hover:bg-purple-500 text-neutral-950 py-1 px-3 cursor-pointer
     select-none rounded-xs transition-colors duration-250 w-fit inline-flex
     font-semibold no-underline focus:outline-2 focus:outline-neutral-900 focus:ring-4 focus:ring-purple-400;
 }
 
 .sta-btn:hover {
-    @apply text-neutral-950 ;
+  @apply text-neutral-950;
 }
 
 .sta-btn.yellow-btn {
-    @apply bg-amber-500 hover:bg-amber-600 focus:ring-amber-500;
+  @apply bg-amber-500 hover:bg-amber-600 focus:ring-amber-500;
 }
 
 .sta-btn.teal-btn {
-    @apply bg-teal-500 hover:bg-teal-600 focus:ring-teal-500;
+  @apply bg-teal-500 hover:bg-teal-600 focus:ring-teal-500;
 }
 
 .sta-btn.neutral-btn {
-    @apply bg-neutral-700 hover:bg-neutral-800 focus:ring-neutral-700 text-neutral-50;
+  @apply bg-neutral-700 hover:bg-neutral-800 focus:ring-neutral-700 text-neutral-50;
 }
 
 .sta-btn img {
-    filter: invert(0.96);
+  filter: invert(0.96);
 }
 
 /* Nav animation */
 .swing {
-    animation: swing 0.5s;
-    transform-origin: center -20px;
+  animation: swing 0.5s;
+  transform-origin: center -20px;
 }
 
 @keyframes swing {
-    0% {
-        transform: rotate(4deg);
-        opacity: 0;
-    }
-    25% {
-        transform: rotate(-3deg);
-    }
-    50% {
-        transform: rotate(2deg);
-        opacity: 100%;
-    }
-    75% {
-        transform: rotate(-1deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(4deg);
+    opacity: 0;
+  }
+  25% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(2deg);
+    opacity: 100%;
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /* Embla Carousel */
 .embla {
-    overflow: hidden;
-    z-index: 10 !important;
+  overflow: hidden;
+  z-index: 10 !important;
 }
 
 .embla__container {
-    display: flex;
+  display: flex;
 }
 
 .embla__slide {
-    flex: 0 0 auto;
-    min-width: 0;
-    display: inline-block;
+  flex: 0 0 auto;
+  min-width: 0;
+  display: inline-block;
 }
 
 body:has(.nav-open) .hide-on-nav-open {
-    /*
+  /*
     We need this bad workaround to hide images when the mobile nav is open
     because the way next renders images does not make sense and they are
     invincible in a way that I can't understand :(
@@ -125,5 +129,5 @@ body:has(.nav-open) .hide-on-nav-open {
     this class and it should disappear.
     If you want to try and find a prettier fix I send hope and good vibes <3
     */
-    z-index: -10 !important;
+  z-index: -10 !important;
 }

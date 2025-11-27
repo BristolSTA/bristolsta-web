@@ -8,29 +8,37 @@ function makeDateString(start: string, end: string): string {
   if (start.substring(0, 10) === end.substring(0, 10)) {
     return new Date(start).toLocaleDateString("en-GB", {
       day: "numeric",
-      month: "long"
+      month: "long",
     });
   } else if (start.substring(5, 7) === end.substring(5, 7)) {
-      return new Date(start).toLocaleDateString("en-GB", { day: "numeric" }) +
+    return (
+      new Date(start).toLocaleDateString("en-GB", { day: "numeric" }) +
       " – " +
       new Date(end).toLocaleDateString("en-GB", {
         day: "numeric",
-        month: "long"
-      });
+        month: "long",
+      })
+    );
   } else {
-      return new Date(start).toLocaleDateString("en-GB", {
+    return (
+      new Date(start).toLocaleDateString("en-GB", {
         day: "numeric",
-        month: "long"
+        month: "long",
       }) +
       " – " +
       new Date(end).toLocaleDateString("en-GB", {
         day: "numeric",
-        month: "long"
-      });
+        month: "long",
+      })
+    );
   }
 }
 
-export default function ProductionTile({production}: {production: ProductionNode}) {
+export default function ProductionTile({
+  production,
+}: {
+  production: ProductionNode;
+}) {
   return (
     <div key={production.slug} className={"flex flex-col p-3"}>
       <div className="m-3">
@@ -50,7 +58,9 @@ export default function ProductionTile({production}: {production: ProductionNode
         <StaLinkButton
           href={`https://uobtheatre.com/production/${production.slug}`}
           className={"my-3"}
-        >View on UOB Theatre</StaLinkButton>
+        >
+          View on UOB Theatre
+        </StaLinkButton>
       </div>
     </div>
   );

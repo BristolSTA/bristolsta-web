@@ -8,12 +8,10 @@ import StaLinkButton from "../components/sta-link-button";
 export default function NotFound() {
   return (
     <main>
-      <StaTitle title=":(" bgImage="charles-404.jpeg"/>
+      <StaTitle title=":(" bgImage="charles-404.jpeg" />
       <StaTextContainer>
         <StaText>Sorry, we can&apos;t find that page.</StaText>
-        <StaLinkButton href="/">
-          Go to the homepage
-        </StaLinkButton>
+        <StaLinkButton href="/">Go to the homepage</StaLinkButton>
       </StaTextContainer>
     </main>
   );

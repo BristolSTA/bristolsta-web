@@ -1,6 +1,6 @@
 "use server";
 
-import {verifyTurnstile} from 'nextjs-turnstile';
+import { verifyTurnstile } from "nextjs-turnstile";
 
 export async function verification(token) {
   return await verifyTurnstile(token);
@@ -13,7 +13,7 @@ export async function sendContactMessage(message: string) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      content: message
+      content: message,
     }),
   });
 }

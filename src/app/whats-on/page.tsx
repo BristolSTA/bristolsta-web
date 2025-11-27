@@ -3,15 +3,14 @@ import { Metadata } from "next";
 import UOBTheatreProductions from "@/app/whats-on/productions";
 
 export const metadata: Metadata = {
-  title: 'What\'s On',
+  title: "What's On",
 };
-
 
 export default function Page() {
   return (
     <main>
-      <StaTitle title="What&apos;s On" bgImage="panto-narnia.jpeg" />
+      <StaTitle title="What's On" bgImage="panto-narnia.jpeg" />
       <UOBTheatreProductions />
     </main>
-  )
+  );
 }
