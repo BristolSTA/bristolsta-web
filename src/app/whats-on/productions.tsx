@@ -53,9 +53,13 @@ export default function UOBTheatreProductions(): JSX.Element {
     (async () => {
       if (loading) {
         try {
-          const result = await client.query({ query: currentProductionsQuery });
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          const result: any = await client.query({
+            query: currentProductionsQuery,
+          });
           setEdges(result.data?.productions?.edges ?? []);
-        } catch (error) {
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        } catch (error: any) {
           console.log(error);
           setError(error.message ?? "Failed to load productions.");
         } finally {
