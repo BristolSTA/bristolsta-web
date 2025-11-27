@@ -91,9 +91,9 @@ export default function UOBTheatreProductions(): JSX.Element {
       <StaTextContainer>
         <StaText>
           Things are a bit quiet right now... If you have a production you want
-          to work with us on, please get in touch, we&apos;d love to help! Otherwise,
-          we&apos;re working on things behind the scenes so keep an eye out for
-          tickets becoming available soon.
+          to work with us on, please get in touch, we&apos;d love to help!
+          Otherwise, we&apos;re working on things behind the scenes so keep an
+          eye out for tickets becoming available soon.
         </StaText>
         <StaLinkButton href="/contact-us" className="teal-btn">
           Contact us
