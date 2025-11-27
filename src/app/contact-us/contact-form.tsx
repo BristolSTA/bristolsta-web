@@ -4,15 +4,24 @@ import StaText from "../../components/sta-text";
 import { sendContactMessage, verification } from "./verify-turnstile";
 import { Button } from "react-aria-components";
 import { redirect } from "next/navigation";
+import { FormEvent } from "react";
 
 export default function ContactForm() {
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const token = e.target["cf-turnstile-response"].value;
+    const formData = new FormData(e.currentTarget);
+    const token: string =
+      formData.get("cf-turnstile-response")?.toString() ?? "";
     if (await verification(token)) {
-      const name = e.target["name"].value.trim();
-      const email = e.target["email"].value.trim();
-      const message = e.target["message"].value.trim();
+      const name: string | undefined = formData.get("name")?.toString().trim();
+      const email: string | undefined = formData
+        .get("email")
+        ?.toString()
+        .trim();
+      const message: string | undefined = formData
+        .get("message")
+        ?.toString()
+        .trim();
 
       if (!name || !email || !message) {
         throw new Error("Missing required form fields");
