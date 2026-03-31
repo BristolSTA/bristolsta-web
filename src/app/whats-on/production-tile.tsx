@@ -45,7 +45,7 @@ export default function ProductionTile({
         {production.featuredImage?.url && (
           // eslint-disable-next-line @next/next/no-img-element
           <img
-            src={production.featuredImage.url}
+            src={production.featuredImage.url.split("?")[0]}
             alt={`${production.name} cover image`}
             className="rounded w-full"
           />
