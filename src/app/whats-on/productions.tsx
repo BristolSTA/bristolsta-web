@@ -18,8 +18,8 @@ export type ProductionNode = {
 };
 
 const currentProductionsQuery = gql`
-  query {
-    productions(status: "PUBLISHED") {
+  query ProductionsQuery ($status: ProductionsProductionStatusChoices!) {
+    productions(status: $status) {
       edges {
         node {
           name
@@ -56,6 +56,9 @@ export default function UOBTheatreProductions(): JSX.Element {
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           const result: any = await client.query({
             query: currentProductionsQuery,
+            variables: {
+              status: "PUBLISHED"
+            }
           });
           setEdges(result.data?.productions?.edges ?? []);
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
