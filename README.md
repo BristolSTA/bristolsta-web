@@ -14,16 +14,6 @@ website.
 
 ---
 
-
-# TODO:
-[ ] add aws s3 uobtheatre images
-[ ] update ctte names
-[ ] keep contact form or just tell to email?
-[ ] add ctte role descriptions
-[ ] change hires page
-[ ] deal with next's image shit
-[ ] add site meta info
-
 ## Getting Started
 
 Copy and complete the `.env` file from `.env.example`, then run `yarn install && yarn dev` to start the dev server.
