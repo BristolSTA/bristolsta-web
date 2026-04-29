@@ -15,7 +15,10 @@ export const metadata: Metadata = {
     template: "%s | Bristol STA",
     default: "Bristol STA",
   },
-  description: "Bristol Stage Technicians' Association - a Bristol SU technical theatre society",
+  description: "Bristol Stage Technicians' Association – a Bristol SU society",
+  icons: {
+    icon: '/sta-logo.png',
+  }
 };
 export const viewport: Viewport = {
   themeColor: '#b57eff',
