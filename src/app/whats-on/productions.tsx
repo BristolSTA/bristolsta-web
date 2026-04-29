@@ -111,7 +111,7 @@ export default function UOBTheatreProductions(): JSX.Element {
 
   return (
     <StaTextContainer
-      className={"grid grid-cols-1 sm:grid-cols-2 grid-flow-row border border-white"}
+      className={"grid grid-cols-1 sm:grid-cols-2 grid-flow-row"}
     >
       {edges.map((edge) => (
         <ProductionTile key={edge.node.slug} production={edge.node} />
