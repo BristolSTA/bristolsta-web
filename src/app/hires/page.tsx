@@ -16,40 +16,34 @@ export default function Hires() {
       <StaTextContainer>
         <div className="hires__image_grid">
           <Image
-            src="/images/hires/s4-fresnel.png"
-            alt="Fresnel light"
-            width={423}
-            height={480}
+            src="/images/hires/fresnel-v.png"
+            alt="LED fresnel light"
+            width={300}
+            height={288}
           />
           <Image
             src="/images/hires/chair.png"
             alt="Wooden chair"
-            width={1642}
-            height={2757}
-          />
-          <Image
-            src="/images/hires/m32.png"
-            alt="Sound mixer"
-            width={1347}
-            height={700}
+            width={300}
+            height={300}
           />
           <Image
             src="/images/hires/sm58.png"
             alt="Microphone"
-            width={1000}
-            height={1000}
+            width={300}
+            height={300}
           />
           <Image
-            src="/images/hires/spiider.png"
-            alt="Moving LED light"
-            width={1500}
-            height={1500}
+            src="/images/hires/flow8.png"
+            alt="Flow8 mixer"
+            width={300}
+            height={300}
           />
           <Image
             src="/images/hires/deck.png"
             alt="Stage deck"
-            width={1024}
-            height={768}
+            width={300}
+            height={300}
           />
         </div>
       </StaTextContainer>

@@ -28,7 +28,7 @@ export default function GetInvolvedInfo() {
             className={"size-6 fill-current"}
             aria-hidden="true"
           />
-          Join the Discord
+          Join Our Discord Server
         </StaLinkButton>
         <StaText>
           You might not be able to see many channels at first as we need to
@@ -69,7 +69,7 @@ export default function GetInvolvedInfo() {
           className={"yellow-btn"}
         >
           <CalendarRangeIcon className={"size-5"} aria-hidden="true" />
-          <span>STA Calendar</span>
+          <span>STA Events Calendar</span>
         </StaLinkButton>
       </StaTextContainer>
       <StaTextContainer>

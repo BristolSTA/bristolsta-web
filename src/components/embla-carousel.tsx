@@ -27,6 +27,10 @@ export default function EmblaCarousel() {
     <div className="embla hide-on-nav-open" ref={emblaRef}>
       <div className="embla__container h-60 lg:h-80">
         <CarouselImage
+          image="little-shop-1.jpg"
+          imageAltText="Actors singing towards the audience. Little Shop of Horrors @ The Loco Klub"
+        />
+        <CarouselImage
           image="alice-1.jpeg"
           imageAltText="An actor stood center stage, surrounded actors crouched down in a circle. Dim blue lighting with warm white spots. Alice By Heart @ The Loco Klub"
         />
@@ -63,6 +67,10 @@ export default function EmblaCarousel() {
           imageAltText="Actor talking to audience. Shaxcase @ The Pegg"
         />
         <CarouselImage
+          image="oliver-2.jpg"
+          imageAltText="Oliver! @ The Winston"
+        />
+        <CarouselImage
           image="9to5-violet.jpg"
           imageAltText="Actor stood on table in purple lighting. 9 to 5 @ The Winston"
         />
@@ -71,8 +79,8 @@ export default function EmblaCarousel() {
           imageAltText="Cast stood at front of thrust stage singing towards the audience. Who Dunnit @ The Winston"
         />
         <CarouselImage
-          image="oliver.jpg"
-          imageAltText="Cast of Oliver 48 hour production. Oliver @ The Winston"
+          image="oliver-1.jpg"
+          imageAltText="Cast of Oliver 48 hour production. Oliver! @ The Winston"
         />
         <CarouselImage
           image="immersion-therapy-2.png"
@@ -85,6 +93,10 @@ export default function EmblaCarousel() {
         <CarouselImage
           image="9to5-set.jpg"
           imageAltText="Office themed set design for 9 to 5 the musical. 9 to 5 @ The Winston"
+        />
+        <CarouselImage
+          image="immersion-therapy-crew.jpg"
+          imageAltText="Crew of Immersion Therapy @ The Winston"
         />
       </div>
     </div>

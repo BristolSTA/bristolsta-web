@@ -70,21 +70,21 @@ export default function SiteFooter() {
             iconFile="discord.svg"
             alt="Discord"
           />
-          <SocialLi
-            href="https://www.youtube.com/user/BristolSTA"
-            iconFile="youtube.svg"
-            alt="YouTube"
-          />
+          {/*<SocialLi*/}
+          {/*  href="https://www.youtube.com/user/BristolSTA"*/}
+          {/*  iconFile="youtube.svg"*/}
+          {/*  alt="YouTube"*/}
+          {/*/>*/}
           <SocialLi
             href="https://uk.linkedin.com/company/bristol-sta"
             iconFile="linkedin.svg"
             alt="LinkedIn"
           />
-          <SocialLi
-            href="https://www.facebook.com/bristolsta"
-            iconFile="facebook.svg"
-            alt="Facebook"
-          />
+          {/*<SocialLi*/}
+          {/*  href="https://www.facebook.com/bristolsta"*/}
+          {/*  iconFile="facebook.svg"*/}
+          {/*  alt="Facebook"*/}
+          {/*/>*/}
           <SocialLi
             href="https://www.bristolsu.org.uk/groups/sta-stage-technicians-association-3e02"
             iconFile="su.png"
