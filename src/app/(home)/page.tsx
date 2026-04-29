@@ -13,7 +13,7 @@ export default function Home() {
     <main className="-mb-4">
       <div
         className="bg-neutral-600 bg-cover bg-center max-h-screen"
-        style={{ backgroundImage: "url(/images/front.png)" }}
+        style={{ backgroundImage: "url(/images/front.png&width=1000)" }}
       >
         <div className="bg-neutral-950/75 w-full h-full pt-48 p-3">
           <h1 className="font-bold text-5xl text-center">
@@ -62,7 +62,7 @@ export default function Home() {
               We offer opportunities for Bristol students to get behind the
               scenes. Come along and get involved with the shows we put on.
             </StaText>
-            <span className="flex-grow min-h-6"></span>
+            <span className="grow min-h-6"></span>
             <StaLinkButton href={"/get-involved"} className="yellow-btn">
               <span>Get Involved</span>
               <ChevronRightIcon className="size-6" aria-hidden="true" />
@@ -74,7 +74,7 @@ export default function Home() {
               If you don’t need a full STA crew we are able to hire out some of
               our equipment for you to use for your own events.
             </StaText>
-            <span className="flex-grow min-h-6"></span>
+            <span className="grow min-h-6"></span>
             <StaLinkButton href={"/hires"} className="sta-btn teal-btn">
               <span>Hire Equipment</span>
               <ChevronRightIcon className="size-6" aria-hidden="true" />
@@ -86,7 +86,7 @@ export default function Home() {
               We’d love to help out with anything from intimate studio work to
               epic musicals. If you’ve got an idea, get in touch.
             </StaText>
-            <span className="flex-grow min-h-6"></span>
+            <span className="grow min-h-6"></span>
             <StaLinkButton href={"/contact-us"} className="sta-btn">
               <span>Collaborate with Us</span>
               <ChevronRightIcon className="size-6" aria-hidden="true" />
