@@ -1,4 +1,4 @@
-import type {Metadata, Viewport} from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Source_Sans_3 } from "next/font/google";
 import SiteNav from "../components/site-nav";
@@ -17,12 +17,12 @@ export const metadata: Metadata = {
   },
   description: "Bristol Stage Technicians' Association – a Bristol SU society",
   icons: {
-    icon: '/images/sta-logo.png',
-  }
+    icon: "/images/sta-logo.png",
+  },
 };
 export const viewport: Viewport = {
-  themeColor: '#b57eff',
-}
+  themeColor: "#b57eff",
+};
 
 export default function RootLayout({
   children,

@@ -1,0 +1,19 @@
+{
+  "name": "bristolsta-frontend",
+  // Setup docker
+  "dockerComposeFile": "compose.yaml",
+  "service": "bristolsta-web",
+  "workspaceFolder": "/workspace/bristolsta-web",
+  // Add the IDs of extensions you want installed when the container is created.
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "bradlc.vscode-tailwindcss",
+        "christian-kohler.path-intellisense",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "postAttachCommand": "cp -r .env.example .env.development && npm install"
+}

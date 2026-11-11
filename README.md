@@ -2,18 +2,10 @@
 
 ## About
 
-This repository is the self-contained web project behind [bristolsta.com](https://www.bristolsta.com), our public-facing
-website.
-
-> [!NOTE]
->
-> ## Work-In-Progress 🔨
->
-> Currently this project is a work in progress, aiming to replace the current Wordpress composition of the website with
-> a self-contained, static Next.js full-stack app.
-
----
+This repository is the self-contained web project behind [bristolsta.com](https://www.bristolsta.com), our public-facing website.
 
 ## Getting Started
 
-Copy and complete the `.env` file from `.env.example`, then run `yarn install && yarn dev` to start the dev server.
+Clone the repository & open in VSCode. When prompted, reopen the project in a dev container, to ensure you're working from the same basis as everyone else.
+
+Once the container loads, you can use `npm run dev` to start the Next development environment.

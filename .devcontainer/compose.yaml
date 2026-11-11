@@ -1,0 +1,10 @@
+services:
+  bristolsta-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    ports:
+      - "3000:3000"
+    volumes:
+      - ..:/workspace/bristolsta-web:cached
