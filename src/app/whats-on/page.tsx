@@ -1,4 +1,4 @@
-import StaTitle from "../../components/sta-title";
+import StaTitle from "@/components/sta-title";
 import { Metadata } from "next";
 import UOBTheatreProductions from "@/app/whats-on/productions";
 

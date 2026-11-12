@@ -1,5 +1,5 @@
-import StaTitle from "../../components/sta-title";
-import StaTextContainer from "../../components/sta-text-container";
+import StaTitle from "@/components/sta-title";
+import StaTextContainer from "@/components/sta-text-container";
 import Image from "next/image";
 import HiresInfo from "@/app/hires/hires-info";
 import { Metadata } from "next";

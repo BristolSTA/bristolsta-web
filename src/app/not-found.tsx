@@ -1,9 +1,9 @@
 "use client";
 
-import StaTitle from "../components/sta-title";
-import StaText from "../components/sta-text";
-import StaTextContainer from "../components/sta-text-container";
-import StaLinkButton from "../components/sta-link-button";
+import StaTitle from "@/components/sta-title";
+import StaText from "@/components/sta-text";
+import StaTextContainer from "@/components/sta-text-container";
+import StaLinkButton from "@/components/sta-link-button";
 
 export default function NotFound() {
   return (

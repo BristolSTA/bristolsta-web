@@ -1,10 +1,10 @@
 "use client";
 import { Link } from "react-aria-components";
-import StaTextContainer from "../../components/sta-text-container";
-import StaText from "../../components/sta-text";
+import StaTextContainer from "@/components/sta-text-container";
+import StaText from "@/components/sta-text";
 import Image from "next/image";
-import StaLinkButton from "../../components/sta-link-button";
-import StaHeading3 from "../../components/sta-heading-3";
+import StaLinkButton from "@/components/sta-link-button";
+import StaHeading3 from "@/components/sta-heading-3";
 import { ChevronRightIcon } from "lucide-react";
 import HomeCard from "./home-card";
 

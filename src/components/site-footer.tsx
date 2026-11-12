@@ -91,7 +91,9 @@ export default function SiteFooter() {
             alt="Bristol SU"
           />
         </ul>
-        <span className="mb-4">&copy; Bristol STA 2025</span>
+        <span className="mb-4" suppressHydrationWarning={true}>
+          &copy; Bristol STA {new Date().getFullYear()}
+        </span>
       </StaTextContainer>
     </footer>
   );

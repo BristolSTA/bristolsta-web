@@ -1,4 +1,4 @@
-import StaTitle from "../../components/sta-title";
+import StaTitle from "@/components/sta-title";
 import GetInvolvedInfo from "@/app/get-involved/get-involved-info";
 import { Metadata } from "next";
 

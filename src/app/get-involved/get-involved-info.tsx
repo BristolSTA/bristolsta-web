@@ -1,9 +1,9 @@
 "use client";
 
-import StaTextContainer from "../../components/sta-text-container";
-import StaText from "../../components/sta-text";
+import StaTextContainer from "@/components/sta-text-container";
+import StaText from "@/components/sta-text";
 import { Link } from "react-aria-components";
-import StaLinkButton from "../../components/sta-link-button";
+import StaLinkButton from "@/components/sta-link-button";
 import Image from "next/image";
 import { CalendarRangeIcon } from "lucide-react";
 

@@ -1,9 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Source_Sans_3 } from "next/font/google";
-import SiteNav from "../components/site-nav";
-import EmblaCarousel from "../components/embla-carousel";
-import SiteFooter from "../components/site-footer";
+import SiteNav from "@/components/site-nav";
+import EmblaCarousel from "@/components/embla-carousel";
+import SiteFooter from "@/components/site-footer";
 
 const sourceSans3 = Source_Sans_3({
   variable: "--font-source-sans-3",

@@ -1,13 +1,13 @@
 "use client";
-import { TurnstileImplicit } from "nextjs-turnstile";
-import StaText from "../../components/sta-text";
+import { Turnstile } from "nextjs-turnstile";
+import StaText from "@/components/sta-text";
 import { sendContactMessage, verification } from "./verify-turnstile";
 import { Button } from "react-aria-components";
 import { redirect } from "next/navigation";
-import { FormEvent } from "react";
+import { SubmitEvent } from "react";
 
 export default function ContactForm() {
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     const token: string =
@@ -54,7 +54,7 @@ export default function ContactForm() {
         <textarea id="message" name="message" rows={4} required></textarea>
       </StaText>
       <div className="mx-3">
-        <TurnstileImplicit
+        <Turnstile
           theme="dark"
           size="normal"
           responseFieldName="cf-turnstile-response"
