@@ -8,7 +8,9 @@ export default function StaTitle({
   return (
     <div
       className="bg-neutral-600 bg-cover bg-center mb-8"
-      style={{ backgroundImage: `url(/images/titles/${bgImage})` }}
+      style={{
+        backgroundImage: `url(https://bristolsta-media.s3.eu-west-2.amazonaws.com/images/titles/${bgImage})`,
+      }}
     >
       <div className="flex items-center justify-center bg-neutral-950/75 w-full h-full">
         <h1 className="max-w-screen-md py-20 text-5xl font-bold mb-4 text-center lg:text-left w-full px-3">

@@ -46,7 +46,7 @@ export default function SiteNav() {
       <div className="flex items-center justify-between max-w-screen-lg w-full mx-auto">
         <Link href="/">
           <Image
-            src="/images/sta-logo-full.svg"
+            src="https://bristolsta-media.s3.eu-west-2.amazonaws.com/images/sta-logo-full.svg"
             width={1000}
             height={100}
             alt="Stage Technicians' Association logo"

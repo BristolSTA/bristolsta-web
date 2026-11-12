@@ -13,7 +13,10 @@ export default function Home() {
     <main className="-mb-4">
       <div
         className="bg-neutral-600 bg-cover bg-center max-h-screen"
-        style={{ backgroundImage: "url(/images/front.png)" }}
+        style={{
+          backgroundImage:
+            "url(https://bristolsta-media.s3.eu-west-2.amazonaws.com/images/front.png)",
+        }}
       >
         <div className="bg-neutral-950/75 w-full h-full pt-48 p-3">
           <h1 className="font-bold text-5xl text-center">
@@ -47,7 +50,7 @@ export default function Home() {
         <div className="my-3 md:my-auto mx-8">
           <Image
             className="w-full"
-            src="/images/bristolsu-logo.png"
+            src="https://bristolsta-media.s3.eu-west-2.amazonaws.com/images/bristolsu-logo.png"
             alt="SU Sup"
             width={2183}
             height={503}
@@ -56,7 +59,7 @@ export default function Home() {
       </StaTextContainer>
       <div className="bg-neutral-950 p-4">
         <StaTextContainer className="grid md:grid-cols-3 my-6 wide">
-          <HomeCard bgImageUrl="/images/pit.jpeg">
+          <HomeCard bgImageUrl="https://bristolsta-media.s3.eu-west-2.amazonaws.com/images/pit.jpeg">
             <StaHeading3>Get Involved</StaHeading3>
             <StaText>
               We offer opportunities for Bristol students to get behind the
@@ -68,7 +71,7 @@ export default function Home() {
               <ChevronRightIcon className="size-6" aria-hidden="true" />
             </StaLinkButton>
           </HomeCard>
-          <HomeCard bgImageUrl="/images/gld.jpeg">
+          <HomeCard bgImageUrl="https://bristolsta-media.s3.eu-west-2.amazonaws.com/images/gld.jpeg">
             <StaHeading3>Hire Equipment</StaHeading3>
             <StaText>
               If you don’t need a full STA crew we are able to hire out some of
@@ -80,7 +83,11 @@ export default function Home() {
               <ChevronRightIcon className="size-6" aria-hidden="true" />
             </StaLinkButton>
           </HomeCard>
-          <HomeCard bgImageUrl={"/images/bar.jpg"}>
+          <HomeCard
+            bgImageUrl={
+              "https://bristolsta-media.s3.eu-west-2.amazonaws.com/images/bar.jpg"
+            }
+          >
             <StaHeading3>Put on a Show</StaHeading3>
             <StaText>
               We’d love to help out with anything from intimate studio work to

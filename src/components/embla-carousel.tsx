@@ -13,7 +13,7 @@ function CarouselImage({
   return (
     // eslint-disable-next-line @next/next/no-img-element
     <img
-      src={`/images/carousel/${image}`}
+      src={`https://bristolsta-media.s3.eu-west-2.amazonaws.com/images/carousel/${image}`}
       alt={imageAltText}
       className="embla__slide"
     />

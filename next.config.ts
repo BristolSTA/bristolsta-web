@@ -13,10 +13,9 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "s3.amazonaws.com",
+        hostname: "bristolsta-media.s3.eu-west-2.amazonaws.com",
         port: "",
-        pathname: "/my-bucket/**",
-        search: "",
+        pathname: "/images/**",
       },
     ],
   },

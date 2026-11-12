@@ -21,7 +21,7 @@ export default function GetInvolvedInfo() {
         </StaText>
         <StaLinkButton href="https://discord.com/invite/t2D7TCcSU5">
           <Image
-            src="/images/icons/discord.svg"
+            src="https://bristolsta-media.s3.eu-west-2.amazonaws.com/images/icons/discord.svg"
             width={100}
             height={100}
             alt={"Discord Icon"}
@@ -48,7 +48,7 @@ export default function GetInvolvedInfo() {
           className={"teal-btn"}
         >
           <Image
-            src="/images/icons/su.png"
+            src="https://bristolsta-media.s3.eu-west-2.amazonaws.com/images/icons/su.png"
             width={100}
             height={100}
             alt={"Bristol SU Icon"}

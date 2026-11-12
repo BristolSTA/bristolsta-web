@@ -16,31 +16,31 @@ export default function Hires() {
       <StaTextContainer>
         <div className="hires__image_grid">
           <Image
-            src="/images/hires/fresnel-v.png"
+            src="https://bristolsta-media.s3.eu-west-2.amazonaws.com/images/hires/fresnel-v.png"
             alt="LED fresnel light"
             width={300}
             height={288}
           />
           <Image
-            src="/images/hires/chair.png"
+            src="https://bristolsta-media.s3.eu-west-2.amazonaws.com/images/hires/chair.png"
             alt="Wooden chair"
             width={300}
             height={300}
           />
           <Image
-            src="/images/hires/sm58.png"
+            src="https://bristolsta-media.s3.eu-west-2.amazonaws.com/images/hires/sm58.png"
             alt="Microphone"
             width={300}
             height={300}
           />
           <Image
-            src="/images/hires/flow8.png"
+            src="https://bristolsta-media.s3.eu-west-2.amazonaws.com/images/hires/flow8.png"
             alt="Flow8 mixer"
             width={300}
             height={300}
           />
           <Image
-            src="/images/hires/deck.png"
+            src="https://bristolsta-media.s3.eu-west-2.amazonaws.com/images/hires/deck.png"
             alt="Stage deck"
             width={300}
             height={300}

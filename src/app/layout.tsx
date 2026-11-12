@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   description: "Bristol Stage Technicians' Association – a Bristol SU society",
   icons: {
-    icon: "/images/sta-logo.png",
+    icon: "https://bristolsta-media.s3.eu-west-2.amazonaws.com/images/sta-logo.png",
   },
 };
 export const viewport: Viewport = {
