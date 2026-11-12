@@ -42,7 +42,7 @@ export default function AboutUs() {
           christmas dinner, and summer barbecues.
         </StaText>
         <StaText>
-          The STA is led by a committee of about 20 members, responsible for
+          The STA is led by a committee of about 14 members, responsible for
           organising activities and making sure we keep on top of important
           theatre-related tasks.
         </StaText>

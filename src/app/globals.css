@@ -84,6 +84,27 @@ textarea {
   transform-origin: center -20px;
 }
 
+@keyframes nav-menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-0.75rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-menu {
+  animation: nav-menu-in 200ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-menu {
+    animation: none;
+  }
+}
+
 @keyframes swing {
   0% {
     transform: rotate(4deg);
@@ -107,7 +128,6 @@ textarea {
 /* Embla Carousel */
 .embla {
   overflow: hidden;
-  z-index: 10 !important;
 }
 
 .embla__container {
@@ -118,16 +138,4 @@ textarea {
   flex: 0 0 auto;
   min-width: 0;
   display: inline-block;
-}
-
-body:has(.nav-open) .hide-on-nav-open {
-  /*
-    We need this bad workaround to hide images when the mobile nav is open
-    because the way next renders images does not make sense and they are
-    invincible in a way that I can't understand :(
-    If you find an image that doesn't disappear when you open the nav just add
-    this class and it should disappear.
-    If you want to try and find a prettier fix I send hope and good vibes <3
-    */
-  z-index: -10 !important;
 }

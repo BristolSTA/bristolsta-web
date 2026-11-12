@@ -2,7 +2,7 @@
 import { MenuIcon, SpotlightIcon, XIcon } from "lucide-react";
 import { Button, Link } from "react-aria-components";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function NavLi({ href, children }: { href: string; children: string }) {
   return (
@@ -37,10 +37,28 @@ function PageLinks({ className }: { className?: string }) {
 export default function SiteNav() {
   const [navOpen, setNavOpen] = useState(false);
 
+  useEffect(() => {
+    // Lock the body scroll when the nav is open, and restore it when closed
+    const previousOverflow = document.body.style.overflow;
+    const previousPaddingRight = document.body.style.paddingRight;
+    const scrollbarWidth =
+      window.innerWidth - document.documentElement.clientWidth;
+
+    document.body.style.overflow = navOpen ? "hidden" : previousOverflow;
+    document.body.style.paddingRight = navOpen
+      ? `${scrollbarWidth}px`
+      : previousPaddingRight;
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      document.body.style.paddingRight = previousPaddingRight;
+    };
+  }, [navOpen]);
+
   return (
     <nav
       className={
-        "bg-neutral-950 py-2 px-4 flex items-center justify-between sticky top-0"
+        "bg-neutral-950 py-2 px-4 flex items-center justify-between sticky top-0 z-20"
       }
     >
       <div className="flex items-center justify-between max-w-screen-lg w-full mx-auto">
@@ -67,7 +85,7 @@ export default function SiteNav() {
           <PageLinks />
         </div>
         {navOpen && (
-          <div className="z-10 top-18 fixed h-full w-screen left-0 overflow-y-scroll bg-neutral-950 lg:hidden nav-open">
+          <div className="z-30 top-18 bottom-0 fixed w-screen left-0 overflow-y-auto bg-neutral-950 lg:hidden nav-menu">
             <PageLinks className="flex-col pb-3" />
           </div>
         )}

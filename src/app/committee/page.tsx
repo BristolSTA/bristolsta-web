@@ -32,48 +32,44 @@ export default function AboutUs() {
     <main>
       <StaTitle title="Committee" bgImage="agm-2025-group.jpeg" />
       <StaTextContainer>
-        <StaText>Our committee for the 25-26 academic year is:</StaText>
+        <StaText>Our committee for the 26-27 academic year is:</StaText>
         <ul>
-          <CommitteeLi role="President" people="Éabha" />
-          <CommitteeLi role="Vice President" mail="vp" people="Chloe" />
-          <CommitteeLi role="Secretary" people="Andrew" />
+          <CommitteeLi role="President" people="Andrew" />
+          <CommitteeLi role="Vice President" mail="vp" people="Alina" />
+          <CommitteeLi role="Secretary" people="Lily" />
           <CommitteeLi
-            role="Equalities & Welfare Officer"
+            role="Equalities & Welfare Officers"
             mail="equalities"
-            people="Ameerah"
+            people="Ameerah & Li"
           />
-          <CommitteeLi role="Treasurer" people="Miles" />
-          <CommitteeLi
-            role="Training Managers"
-            mail="training"
-            people="Bryn & Jonathan"
-          />
+          <CommitteeLi role="Treasurer" people="Tai" />
+          <CommitteeLi role="Training Manager" mail="training" people="Alex" />
           <CommitteeLi
             role="Workshop and Equipment Managers"
             mail="workshop"
-            people="Archie & Phoebe"
+            people="Audrey & Archie"
           />
           <CommitteeLi
             role="Hires and Externals Managers"
             mail="hires"
-            people="Tiago & Okan"
+            people="Bryn & Pat"
           />
           <CommitteeLi
             role="Publicity Officers"
             mail="publicity"
-            people="Pola & Yara"
+            people="Babs & Millie"
           />
           <CommitteeLi
             role="Social Secretaries"
             mail="social"
-            people="Harriet & Veronica"
+            people="Eleanor & Ethan"
           />
           <CommitteeLi role="Webmaster" people="Clara" />
           <CommitteeLi role="New Members' Rep" mail="nmr" people="Cathy & Li" />
-          <CommitteeLi role="Alumni Rep" mail="alumni" people="Dan" />
+          <CommitteeLi role="Alumni Rep" mail="alumni" people="Archie" />
           <CommitteeLi role="Signator" people="Archie" />
           <CommitteeLi
-            role="Confectionary Managers"
+            role="Confectionary Store Managers"
             mail="confectionary"
             people="Elanor & Freddie"
           />

@@ -35,7 +35,7 @@ function SocialLi({
 
 export default function SiteFooter() {
   return (
-    <footer className={`bg-neutral-950 p-4 hide-on-nav-open`}>
+    <footer className={`bg-neutral-950 p-4`}>
       <StaTextContainer className="flex flex-col md:flex-row md:gap-8 justify-center items-center">
         {/*<Image src="https://bristolsta-media.s3.eu-west-2.amazonaws.com/images/sta-logo-full.svg" alt="sta" width={500} height={500} className={"h-16 w-auto"}/>*/}
         <Image

@@ -24,7 +24,7 @@ export default function EmblaCarousel() {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
 
   return (
-    <div className="embla hide-on-nav-open" ref={emblaRef}>
+    <div className="embla" ref={emblaRef}>
       <div className="embla__container h-60 lg:h-80">
         <CarouselImage
           image="little-shop-1.jpg"

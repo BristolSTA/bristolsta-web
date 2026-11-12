@@ -32,7 +32,7 @@ export default function HiresInfo() {
         we will get back to you with more information.
       </StaText>
       <StaText>
-        If you want to hire out The Winston or Pegg theatres, visit the{" "}
+        If you want to hire out the Winston or Pegg theatres, visit the{" "}
         <Link href={"https://www.bristolsu.org.uk/about-us/venue-hire"}>
           Bristol SU website
         </Link>
